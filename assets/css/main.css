@@ -1,0 +1,24 @@
+:root {
+    --font-default: 'Quicksand', sans-serif !important;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: var(--font-default);
+    font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer h4 {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 30px;
+    position: relative;
+    margin: 0 0 20px;
+}
+
