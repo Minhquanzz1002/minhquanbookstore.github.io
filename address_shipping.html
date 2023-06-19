@@ -175,9 +175,282 @@
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="row">
-                        <div class="col-10"></div>
-                        <div class="col-2">
-                            <button></button>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between color-light-green p-2">
+                                    <div>
+                                        <span class="fw-bold">Minh Quân</span>
+                                        <span>(Địa chỉ mặc định)</span>
+                                    </div>
+                                    <div>
+                                        <a data-bs-toggle="collapse" href="#edit-address-1" role="button"
+                                            aria-expanded="false" aria-controls="edit-address-1"
+                                            onclick="showViewAddress('view-address-1')"><i
+                                                class="bi bi-pencil-square"></i></a>
+                                        <a href=""><i class="bi bi-x-lg"></i></a>
+                                    </div>
+                                </div>
+                                <!-- Start: Edit Address Shipping -->
+                                <div class="collapse pt-4" id="edit-address-1">
+                                    <form action="" method="post">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Nhập họ"
+                                                placeholder="Nhập họ" name="first-name">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Nhập tên"
+                                                placeholder="Nhập tên" name="last-name">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtCity"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtCity" name="city">
+                                                <option selected>Chọn thành phố</option>
+                                                <option value="HCM">HCM</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                                <option value="Huế">Huế</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtDistrict"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtDistrict" name="district">
+                                                <option selected>Chọn quận</option>
+                                                <option value="Gò Vấp">Gò Vấp</option>
+                                                <option value="1">Quận 1</option>
+                                                <option value="2">Quận 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtWard"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtWard" name="ward">
+                                                <option selected>Chọn phường</option>
+                                                <option value="1">Phường 1</option>
+                                                <option value="2">Phường 2</option>
+                                                <option value="3">Phường 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Địa chỉ"
+                                                placeholder="Địa chỉ" name="address">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                                            <input type="tel" class="form-control" aria-label="Số điện thoại"
+                                                placeholder="Số điện thoại" name="phone">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Ghi chú"
+                                                placeholder="Ghi chú" name="note">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="chkAddressDefault">
+                                                <label class="form-check-label" for="chkAddressDefault">
+                                                    Đặt làm địa chỉ mặc định
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-outline-dark rounded-0 hvr-sweep-to-right">Cập
+                                            nhật</button>
+                                    </form>
+                                </div>
+                                <!-- End: Edit Address Shipping -->
+                                <!-- Start: View Address Shipping -->
+                                <div class="p-2 row" id="view-address-1">
+                                    <div class="col-md-4">Địa chỉ</div>
+                                    <div class="col-md-8">5/11 Hạnh Thông, Phường 3, Gò Vấp, HCM</div>
+                                    <div class="col-md-4">Số điện thoại</div>
+                                    <div class="col-md-8">0339424070</div>
+                                    <div class="col-md-4">Ghi chú</div>
+                                    <div class="col-md-8">Không giao giờ hành chính</div>
+                                </div>
+                                <!-- End: View Address Shipping -->
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between color-light-green p-2">
+                                    <div>
+                                        <span class="fw-bold">Minh Quân</span>
+                                        <span>(Địa chỉ mặc định)</span>
+                                    </div>
+                                    <div>
+                                        <a data-bs-toggle="collapse" href="#edit-address-2" role="button"
+                                            aria-expanded="false" aria-controls="edit-address-2"
+                                            onclick="showViewAddress('view-address-2')"><i
+                                                class="bi bi-pencil-square"></i></a>
+                                        <a href=""><i class="bi bi-x-lg"></i></a>
+                                    </div>
+                                </div>
+                                <!-- Start: Edit Address Shipping -->
+                                <div class="collapse pt-4" id="edit-address-2">
+                                    <form action="" method="post">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Nhập họ"
+                                                placeholder="Nhập họ" name="first-name">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Nhập tên"
+                                                placeholder="Nhập tên" name="last-name">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtCity"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtCity" name="city">
+                                                <option selected>Chọn thành phố</option>
+                                                <option value="HCM">HCM</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                                <option value="Huế">Huế</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtDistrict"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtDistrict" name="district">
+                                                <option selected>Chọn quận</option>
+                                                <option value="Gò Vấp">Gò Vấp</option>
+                                                <option value="1">Quận 1</option>
+                                                <option value="2">Quận 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="txtWard"><i
+                                                    class="bi bi-map-fill"></i></label>
+                                            <select class="form-select" id="txtWard" name="ward">
+                                                <option selected>Chọn phường</option>
+                                                <option value="1">Phường 1</option>
+                                                <option value="2">Phường 2</option>
+                                                <option value="3">Phường 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Địa chỉ"
+                                                placeholder="Địa chỉ" name="address">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                                            <input type="tel" class="form-control" aria-label="Số điện thoại"
+                                                placeholder="Số điện thoại" name="phone">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                            <input type="text" class="form-control" aria-label="Ghi chú"
+                                                placeholder="Ghi chú" name="note">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="chkAddressDefault">
+                                                <label class="form-check-label" for="chkAddressDefault">
+                                                    Đặt làm địa chỉ mặc định
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-outline-dark rounded-0 hvr-sweep-to-right">Cập
+                                            nhật</button>
+                                    </form>
+                                </div>
+                                <!-- End: Edit Address Shipping -->
+                                <!-- Start: View Address Shipping -->
+                                <div class="p-2 row" id="view-address-2">
+                                    <div class="col-md-4">Địa chỉ</div>
+                                    <div class="col-md-8">5/11 Hạnh Thông, Phường 3, Gò Vấp, HCM</div>
+                                    <div class="col-md-4">Số điện thoại</div>
+                                    <div class="col-md-8">0339424070</div>
+                                    <div class="col-md-4">Ghi chú</div>
+                                    <div class="col-md-8">Không giao giờ hành chính</div>
+                                </div>
+                                <!-- End: View Address Shipping -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>
+                                <button class="btn btn-outline-dark hvr-sweep-to-right rounded-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFormAddressShipping"
+                                    aria-expanded="false" aria-controls="collapseFormAddressShipping">
+                                    Thêm địa chỉ
+                                </button>
+                            </p>
+                            <!-- Start: Collapse Address Shipping -->
+                            <div class="collapse" id="collapseFormAddressShipping">
+                                <form action="" method="post">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                        <input type="text" class="form-control" aria-label="Nhập họ"
+                                            placeholder="Nhập họ" name="first-name">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                        <input type="text" class="form-control" aria-label="Nhập tên"
+                                            placeholder="Nhập tên" name="last-name">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="txtCity"><i
+                                                class="bi bi-map-fill"></i></label>
+                                        <select class="form-select" id="txtCity" name="city">
+                                            <option selected>Chọn thành phố</option>
+                                            <option value="HCM">HCM</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="Huế">Huế</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="txtDistrict"><i
+                                                class="bi bi-map-fill"></i></label>
+                                        <select class="form-select" id="txtDistrict" name="district">
+                                            <option selected>Chọn quận</option>
+                                            <option value="Gò Vấp">Gò Vấp</option>
+                                            <option value="1">Quận 1</option>
+                                            <option value="2">Quận 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="txtWard"><i
+                                                class="bi bi-map-fill"></i></label>
+                                        <select class="form-select" id="txtWard" name="ward">
+                                            <option selected>Chọn phường</option>
+                                            <option value="1">Phường 1</option>
+                                            <option value="2">Phường 2</option>
+                                            <option value="3">Phường 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                        <input type="text" class="form-control" aria-label="Địa chỉ"
+                                            placeholder="Địa chỉ" name="address">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                                        <input type="tel" class="form-control" aria-label="Số điện thoại"
+                                            placeholder="Số điện thoại" name="phone">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                        <input type="text" class="form-control" aria-label="Ghi chú"
+                                            placeholder="Ghi chú" name="note">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="chkAddressDefault">
+                                            <label class="form-check-label" for="chkAddressDefault">
+                                                Đặt làm địa chỉ mặc định
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark rounded-0 hvr-sweep-to-right">Thêm
+                                        mới</button>
+                                </form>
+                            </div>
+                            <!-- End: Collapse Address Shipping -->
                         </div>
                     </div>
                 </div>
@@ -369,6 +642,17 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        // hide/show view address
+        function showViewAddress(view) {
+            var x = document.getElementById(view);
+            if (x.style.display == "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
