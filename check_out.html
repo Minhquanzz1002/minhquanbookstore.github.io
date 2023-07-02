@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ BOOK | Trang chủ</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" type="image/x-icon">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <p class="text-center m-0">Nhận đặt các thể loại sách ngoại văn bằng tiếng Anh theo yêu cầu của quý khách</p>
+    </div>
+
+    <!-- Start: Header -->
+    <header class="header sticky-md-top">
+        <div class="container">
+            <div class="row pt-md-4">
+                <div class="col-md-4 my-auto d-none d-md-block">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm"
+                            aria-label="Tìm kiếm sản phẩm" aria-describedby="btnSeach">
+                        <button type="submit" class="input-group-text" id="btnSeach"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-8 col-md-4">
+                    <div class="d-flex justify-content-md-center justify-content-start">
+                        <a href="/" class="w-50">
+                            <img src="assets/img/logo-text.png" alt="Logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 my-auto">
+                    <div class="d-flex justify-content-evenly">
+                        <a href="sign_in_sign_up.html" class="d-lg-inline-flex align-items-center d-none">
+                            <i class="bi bi-person h5 mb-0 me-2"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                        <a href="cart.html" class="d-inline-flex align-items-center" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                            <i class="bi bi-cart3 h5 mb-0 me-2"></i>
+                            <span class="d-none d-md-block">Giỏ hàng</span>
+                            <span class="translate-middle badge rounded-pill bg-dark">
+                                3
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                        <div class="d-inline-flex align-items-center">
+                            <span class="mx-1">
+                                <a href="">
+                                    <img src="assets/img/flag-vietnamese.png" alt="flag-us" width="25" height="15">
+                                </a>
+                            </span>
+                            <span class="mx-1">
+                                <a href="">
+                                    <img src="assets/img/flag-us.webp" alt="flag-vietnamese" width="25" height="15">
+                                </a>
+                            </span>
+                        </div>
+                        <div>
+                            <nav class="navbar navbar-expand-md navbar-light">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- Start: Menu -->
+                    <nav class="navbar navbar-expand-md navbar-light bg-light pb-0">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav w-100 d-flex justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase active" aria-current="page"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase" href="#">Sách mới</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-uppercase dropdown-toggle" href="#"
+                                            id="navbarDropdownProduct" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownProduct">
+                                            <li class="dropend">
+                                                <a class="dropdown-item text-capitalize dropdown-toggle" href="#"
+                                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Sách Ngoại Văn
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                    <li><a class="dropdown-item text-capitalize" href="#">Ẩm thực</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-capitalize" href="#">Học thuật</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-capitalize" href="#">Nghệ Thuật</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-capitalize" href="#">Nhiếp Ảnh</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-capitalize" href="#">Nội thất</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">Sách Dịch</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">Sách Luật</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-uppercase dropdown-toggle" href="#"
+                                            id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Về chúng tôi
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                                            <li><a class="dropdown-item text-capitalize" href="#">Cửa hàng</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">Liên hệ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- End: Menu -->
+                </div>
+                <div class="input-group d-md-none mb-4">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm"
+                        aria-label="Tìm kiếm sản phẩm" aria-describedby="btnSeach">
+                    <button type="submit" class="input-group-text" id="btnSeach"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End: Header -->
+
+    <!-- Start: Main -->
+    <main class="py-5">
+        <div class="container">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="cart.html">Giỏ hàng</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7"></div>
+                <div class="col-12 col-md-5">
+                    <div class="row">
+                        <div class="col-12 my-2 pb-3 border-bottom">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <div class="d-flex flex-column">
+                                        <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                        <div>
+                                            <span class="bg-secondary py-1 px-2">3</span>
+                                            <span class="ms-3 text-muted">2,640,000₫</span>
+                                            <button type="button" class="btn float-end"><i
+                                                    class="bi bi-trash-fill"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-2 pb-3 border-bottom">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <div class="d-flex flex-column">
+                                        <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                        <div>
+                                            <span class="bg-secondary py-1 px-2">3</span>
+                                            <span class="ms-3 text-muted">2,640,000₫</span>
+                                            <button type="button" class="btn float-end"><i
+                                                    class="bi bi-trash-fill"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-2 pb-3 border-bottom">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <div class="d-flex flex-column">
+                                        <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                        <div>
+                                            <span class="bg-secondary py-1 px-2">3</span>
+                                            <span class="ms-3 text-muted">2,640,000₫</span>
+                                            <button type="button" class="btn float-end"><i
+                                                    class="bi bi-trash-fill"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-2 pb-3">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control rounded-0" placeholder="Nhập mã giảm giá"
+                                    aria-label="Nhập mã giảm giá" aria-describedby="btnAddDiscount">
+                                <button class="btn btn-outline-dark hvr-sweep-to-right rounded-0" type="button"
+                                    id="btnAddDiscount">Sử dụng</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-2 pb-3" id="">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr class="d-none">
+                                        <th scope="col" class="visible disabled">Mô tả</th>
+                                        <th scope="col" class="hide">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tạm tính</td>
+                                        <td class="text-end">2,640,000₫</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phí vận chuyển</td>
+                                        <td class="text-end">30,000₫</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giảm giá</td>
+                                        <td class="text-end">10,000₫</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6" style="font-size: 1.5rem">Tổng tiền</div>
+                                <div class="col-6 text-end" style="font-size: 1.5rem">6,720.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Start: Footer -->
+    <footer class="footer" id="footer">
+        <div class="py-4 border-top border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <label for=""><i class="bi bi-envelope-paper h4 me-2"></i>Đăng ký nhận tin</label>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="input-group">
+                            <input type="email" class="form-control rounded-0" placeholder="Nhập email của bạn"
+                                aria-label="Nhập email của bạn" aria-describedby="btnEmailSign">
+                            <button class="btn btn-dark rounded-0 hvr-sweep-to-right" type="button"
+                                id="btnEmailSign">Đăng ký</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 my-auto">
+                        <span><i class="bi bi-telephone-fill"></i></span>
+                        <span class="text-muted">Hỗ trợ / Mua hàng:</span>
+                        <a href="tel:+84 123456789" class="text-decoration-none text-danger">+84 123456789</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border-bottom">
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
+                        <h4>Giới thiệu</h4>
+                        <div>
+                            <p class="text-muted">
+                                <b class="text-dark">CÔNG TY TNHH SÁCH MQ BOOK</b>
+                                <br>
+                                Mã số thuế: 0312211246
+                                <br>
+                                Nơi cấp: Sở kế hoạch và đầu tư HCM - Cấp ngày: 30/03/2013
+                                <br>
+                                Địa chỉ: 184 Đường Số 6, P7, GV, TP HCM
+                            </p>
+                        </div>
+                        <div>
+                            <a href="" target="_blank" rel="nofollow">
+                                <img src="assets/img/checked.png" alt="Bộ Công Thương" class="img-fluid w-50">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 col-lg">
+                        <h4>Liên kết</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="">Quy chế hoạt động </a></li>
+                            <li><a href="">Chính sách bảo mật </a></li>
+                            <li><a href="">Chính sách thanh toán </a></li>
+                            <li><a href="">Chính sách vận chuyển </a></li>
+                            <li><a href="">Chính sách đổi trả </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg">
+                        <h4>Trụ sở</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="me-2 text-dark bi bi-geo-alt-fill"></i>41 đường số 6, P7, Gò Vấp, HCM</li>
+                            <li><i class="me-2 text-dark bi bi-telephone-fill"></i>Hotline: +84 12345678</li>
+                            <li><i class="me-2 text-dark bi bi-send-fill"></i>info@minhquan.com.vn</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg">
+                        <h4>Kết nối với chúng tôi</h4>
+                        <div>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="" target="_blank" class="text-primary"><i
+                                            class="bi h3 bi-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="" target="_blank" class="text-danger"><i
+                                            class="bi h3 bi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="" target="_blank" class="text-info"><i
+                                            class="bi h3 bi-twitch"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center border-top py-3">
+            <div>
+                &copy; Copyright <strong><a href="https://artbook.com.vn/" class="text-dark">ArtBook</a></strong>. All
+                Rights Reserved
+            </div>
+            <div>Designed by: <strong>Minh Quân</strong></div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- Start: Offcanvas cart -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
+        aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-muted" id="offcanvasCartLabel">GIỎ HÀNG</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-12 my-2 pb-3 border-bottom">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <div class="d-flex flex-column">
+                                <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                <div>
+                                    <span class="bg-secondary py-1 px-2">3</span>
+                                    <span class="ms-3 text-muted">2,640,000₫</span>
+                                    <button type="button" class="btn float-end"><i
+                                            class="bi bi-trash-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-2 pb-3 border-bottom">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <div class="d-flex flex-column">
+                                <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                <div>
+                                    <span class="bg-secondary py-1 px-2">3</span>
+                                    <span class="ms-3 text-muted">2,640,000₫</span>
+                                    <button type="button" class="btn float-end"><i
+                                            class="bi bi-trash-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-2 pb-3 border-bottom">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/book.webp" alt="Product" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <div class="d-flex flex-column">
+                                <div>I WORK @ HOME. HOME OFFICES FOR A NEW ERA</div>
+                                <div>
+                                    <span class="bg-secondary py-1 px-2">3</span>
+                                    <span class="ms-3 text-muted">2,640,000₫</span>
+                                    <button type="button" class="btn float-end"><i
+                                            class="bi bi-trash-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <hr size="5">
+                </div>
+                <div class="col-12 text-muted my-3">
+                    <div class="d-flex justify-content-between">
+                        <span>TỔNG TIỀN</span>
+                        <span>0₫</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <a href="cart.html" class="btn btn-dark rounded-0 hvr-sweep-to-right w-100 py-2">XEM GIỎ
+                        HÀNG</a>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <a href="check_out.html" type="button"
+                        class="btn btn-danger rounded-0 hvr-sweep-to-right w-100 py-2">THANH
+                        TOÁN</a>
+                </div>
+                <div class="col-12 my-2">
+                    <a href="" type="button" class="btn btn-danger rounded-0 hvr-sweep-to-right w-100 py-2"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        TIẾP TỤC MUA HÀNG
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Offcanvas cart -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
